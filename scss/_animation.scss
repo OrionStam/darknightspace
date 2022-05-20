@@ -1,0 +1,27 @@
+@mixin opacityFade {
+    transition: opacity 1.5s;
+}
+*{    transition: opacity 0.5s;
+}
+ul:hover li {
+    opacity: 0.5;
+    @include opacityFade();
+}
+ul li:hover {
+    opacity: 1;
+    @include opacityFade();
+    cursor: pointer;
+
+}
+
+
+
+
+li:after {
+  display:block;
+  content: '';
+  border-bottom: solid 1px #141414;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+li:hover:after { transform: scaleX(1); }

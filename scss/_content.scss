@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:norm,wght@1,100&display=swap');
+
+    body{
+        font-family: 'Montserrat', sans-serif;    
+}
+
+
+
+.home-banner{
+    position: relative;
+}
+
+.home-banner_parallax {
+    height: 650px;
+    background-image: url("../assets/Gallery/Full res/LDN1235.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+
+  
